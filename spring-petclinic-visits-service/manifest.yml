@@ -15,4 +15,4 @@ applications:
     services:
       - visits-db
       - config
-      - registry #
+      - registry 

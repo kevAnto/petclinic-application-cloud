@@ -15,4 +15,4 @@ applications:
     services:
       - customers-db
       - config
-      - registry #
+      - registry 
