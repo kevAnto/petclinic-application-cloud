@@ -29,7 +29,8 @@ jobs:
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
       - name: Building the docker Image for ${{ inputs.service-name }}
         run: |
-          sudo cd ${{ inputs.service-name }}
+          cd ${{ inputs.service-name }}
+          sudo -s
           ./mvnw spring-boot:build-image -Pk8s -DREPOSITORY_PREFIX=kevanto
       - name: Tagging built image
         run: docker tag kevanto/${{ inputs.service-name }} kevanto/${{ inputs.service-name }}:${{ github.run_id }}-${{ github.run_number }}
