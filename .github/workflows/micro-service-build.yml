@@ -36,10 +36,4 @@ jobs:
       - name: Pushing ${{ inputs.service-name }} to Docker Hub registry
         run: docker push --all-tags kevanto/${{ inputs.service-name }}
         
-  deploy-job:
-    uses: ./.github/workflows/deploy-staging.yml
-    with:
-      service-name: ${{ inputs.service-name }}
-      service-version: ${{ github.run_id }}-${{ github.run_number }}
-    secrets: inherit 
-    needs: [build-and-publish-service]
+  
