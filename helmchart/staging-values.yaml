@@ -1,0 +1,27 @@
+namespace: staging
+
+apigateway:
+  image: dstpetclinic/spring-petclinic-api-gateway
+  version: latest
+  replicaCount: 1
+
+customersservice:
+  image: dstpetclinic/spring-petclinic-customers-service
+  version: latest
+  replicaCount: 1
+
+vetsservice:
+  image: dstpetclinic/spring-petclinic-vets-service
+  version: latest
+  replicaCount: 1
+
+visitsservice:
+  image: dstpetclinic/spring-petclinic-visits-service
+  version: latest
+  replicaCount: 1
+
+database:
+  host: petclinic-db.c0tbj20ewehm.eu-west-3.rds.amazonaws.com:3306
+  name: petclinicdb
+  username: petclinicuser
+  password: redacted
