@@ -30,11 +30,11 @@ jobs:
       - name: Building the docker Image for ${{ inputs.service-name }}
         run: |
           cd ${{ inputs.service-name }}
-          ./mvnw spring-boot:build-image -Pk8s -DREPOSITORY_PREFIX=dstpetclinic
+          ./mvnw spring-boot:build-image -Pk8s -DREPOSITORY_PREFIX=kevanto
       - name: Tagging built image
-        run: docker tag dstpetclinic/${{ inputs.service-name }} dstpetclinic/${{ inputs.service-name }}:${{ github.run_id }}-${{ github.run_number }}
+        run: docker tag kevanto/${{ inputs.service-name }} kevanto/${{ inputs.service-name }}:${{ github.run_id }}-${{ github.run_number }}
       - name: Pushing ${{ inputs.service-name }} to Docker Hub registry
-        run: docker push --all-tags dstpetclinic/${{ inputs.service-name }}
+        run: docker push --all-tags kevanto/${{ inputs.service-name }}
         
   deploy-job:
     uses: ./.github/workflows/deploy-staging.yml
