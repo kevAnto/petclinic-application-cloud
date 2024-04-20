@@ -31,6 +31,7 @@ jobs:
         run: |
           cd ${{ inputs.service-name }}
           ./mvnw spring-boot:build-image -Pk8s -DREPOSITORY_PREFIX=kevanto
+          sudo -s
       - name: Tagging built image
         run: docker tag kevanto/${{ inputs.service-name }} kevanto/${{ inputs.service-name }}:${{ github.run_id }}-${{ github.run_number }}
       - name: Pushing ${{ inputs.service-name }} to Docker Hub registry
