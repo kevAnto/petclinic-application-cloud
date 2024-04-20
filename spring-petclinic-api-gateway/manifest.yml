@@ -12,4 +12,4 @@ applications:
       SPRING_PROFILES_ACTIVE: cloud
     services:
       - config
-      - registry
+      - registry #

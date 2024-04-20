@@ -15,4 +15,4 @@ applications:
     services:
       - vets-db
       - config
-      - registry
+      - registry #
