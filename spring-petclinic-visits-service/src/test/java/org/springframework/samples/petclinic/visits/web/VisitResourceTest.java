@@ -28,9 +28,6 @@ class VisitResourceTest {
     @Autowired
     MockMvc mvc;
 
-    @MockBean
-    VisitRepository visitRepository;
-
     @Test
 	void contextLoads() {
 	}

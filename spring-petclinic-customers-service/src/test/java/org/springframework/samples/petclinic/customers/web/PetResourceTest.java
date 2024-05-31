@@ -34,13 +34,7 @@ class PetResourceTest {
     @Autowired
     MockMvc mvc;
 
-    @MockBean
-    PetRepository petRepository;
-
-    @MockBean
-    OwnerRepository ownerRepository;
-
-    /*@Test
+    @Test
 	void contextLoads() {
-	}*/
+	}
 }
