@@ -39,7 +39,7 @@ jobs:
         id: vars
         run: echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
 
-        # check https://github.com/marketplace/actions/deploy-helm-chart-to-aws-eks-cluster
+        ## check https://github.com/marketplace/actions/deploy-helm-chart-to-aws-eks-cluster
       - name: Deploy Helm to Staging
         uses: bitovi/github-actions-deploy-eks-helm@v1.2.9
         with:
