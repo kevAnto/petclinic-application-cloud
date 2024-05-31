@@ -1,6 +1,8 @@
 package org.springframework.samples.petclinic.visits.web;
+package org.springframework.samples.petclinic.api;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -33,3 +35,4 @@ class VisitResourceTest {
 	void contextLoads() {
 	}
 }
+

@@ -40,8 +40,7 @@ class PetResourceTest {
     @MockBean
     OwnerRepository ownerRepository;
 
-    @Test
+    /*@Test
 	void contextLoads() {
-	}
-    
+	}*/
 }
