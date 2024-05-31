@@ -12,7 +12,7 @@ customersservice:
 
 vetsservice:
   image: kevanto/spring-petclinic-vets-service
-  version: 89321663668-4
+  version: 9321663668-4
   replicaCount: 1
 
 visitsservice:
