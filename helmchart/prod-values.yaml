@@ -2,22 +2,22 @@ namespace: production
 
 apigateway:
   image: kevanto/spring-petclinic-api-gateway
-  version: 9501300199-11
+  version: 9546711327-12
   replicaCount: 2
 
 customersservice:
   image: kevanto/spring-petclinic-customers-service
-  version: 9501300203-12
+  version: 9546711324-13
   replicaCount: 1
 
 vetsservice:
   image: kevanto/spring-petclinic-vets-service
-  version: 9501300195-7
+  version: 9546711326-8
   replicaCount: 1
 
 visitsservice:
   image: kevanto/spring-petclinic-visits-service
-  version: 99501300209-12
+  version: 9546711328-13
   replicaCount: 1
 
 database:
