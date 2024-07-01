@@ -77,7 +77,7 @@ public class ApiGatewayApplication {
     }
 
     /**
-     * Default Resilience4j circuit breaker configuration
+     * Default Resilience4j circuit breaker configuration.
      */
     @Bean
     public Customizer<ReactiveResilience4JCircuitBreakerFactory> defaultCustomizer() {
